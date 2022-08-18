@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Nunito+Sans&family=Overpass&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.header {
+  width: 48vw;
+  height: 84px;
+  background-color: #7025fb;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.header-icon {
+  padding-left: 60px;
+}
+.header-text {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+}
+.landing-image {
+  width: 48vw;
+  height: 43.3vw;
+}
+.landing-image img {
+  width: 100%;
+  height: 100.5%;
+}
+
+.thanks-message-div {
+  margin-left: 18vw;
+}
+.rocket-img {
+  margin-left: 35px;
+}
+.thx-txt {
+  font-size: 36px;
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: -60px;
+}

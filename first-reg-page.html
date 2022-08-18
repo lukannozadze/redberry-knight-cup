@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redberry Knight Cup-Bootcamp assignment</title>
+    <link rel="stylesheet" href="./first-reg-page.css" />
+  </head>
+  <body>
+    <div class="first-part-container">
+      <header class="header">
+        <span class="header-icon"
+          ><img src="./images/Vector.svg" alt="vector icon"
+        /></span>
+        <h2 class="header-text">Redberry Knight Cup</h2>
+      </header>
+      <div class="container-first">
+        <div class="landing-image">
+          <img
+            src="./images/first-reg-page-img.png"
+            alt="landing page scrolling photo"
+          />
+        </div>
+        <p class="image-text">
+          “When you see a good move,<br />
+          look for a better one.”
+          <span class="author-text">-Emanuel Lasker</span>
+        </p>
+      </div>
+    </div>
+    <div class="container-second">
+      <div class="sec-header">
+        <p class="create-acc-text">Start Creating Your Account</p>
+      </div>
+      <div class="tracker-container">
+        <div class="pers-info"><span class="box-txt1">1</span></div>
+        <div class="divider"></div>
+        <div class="chess-exp"><span class="box-txt2">2</span></div>
+        <div class="error-block">
+          <div class="error-header">
+            <img src="./images/invalid-icon.png" alt="invalid mark icon" />
+            <p class="err-name">Invalid email</p>
+            <img class="x-icon" src="./images/x-icon.png" alt="turn off icon" />
+          </div>
+          <div class="error-txt">
+            <p>Please enter valid email address</p>
+          </div>
+        </div>
+        <p class="pers-info-txt">Personal information</p>
+        <p class="chess-exp-txt">Chess experience</p>
+      </div>
+      <section class="personal-information">
+        <h2 class="pers-info-header">Personal Information</h2>
+        <p class="basic-info-p">This is basic information fields</p>
+
+        <form class="reg-form">
+          <input
+            class="required"
+            value=""
+            type="text"
+            id="name-input"
+            name="fname"
+            placeholder="Name"
+            required
+          />
+          <span class="asterisk1">&#42;</span>
+          <img
+            class="correct-icon1"
+            src="./images/icon-correct.png"
+            alt="correct mark icon"
+          />
+          <input
+            class="required"
+            value=""
+            type="text"
+            id="email-input"
+            name="email"
+            placeholder="Email"
+          />
+          <span class="asterisk2">&#42;</span>
+          <img
+            class="correct-icon2"
+            src="./images/icon-correct.png"
+            alt="correct mark icon"
+          />
+          <input
+            class="required"
+            value=""
+            type="text"
+            id="tel-input"
+            name="telephone"
+            placeholder="Number"
+            onfocus="(this.type = 'text')"
+          />
+          <span class="asterisk3">&#42;</span>
+          <img
+            class="correct-icon3"
+            src="./images/icon-correct.png"
+            alt="correct mark icon"
+          />
+          <input
+            class="required"
+            value=""
+            type="text"
+            id="date-input"
+            name="date"
+            placeholder="Date of birth"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+          />
+          <span class="asterisk4">&#42;</span>
+          <img
+            class="correct-icon4"
+            src="./images/icon-correct.png"
+            alt="correct mark icon"
+          />
+        </form>
+      </section>
+      <div class="buttons">
+        <a href="./index.html"><button class="previous-btn">Back</button></a>
+        <div class="next-btn-div">
+          <a href="./second-reg-page.html"
+            ><button class="next-btn">
+              Next <img src="./images/btnIcon.svg" alt="button icon" /></button
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="./first-reg-page.js"></script>
+  </body>
+</html>
