@@ -33,7 +33,7 @@ nameInput.addEventListener("focus", function () {
   firstBox.style.backgroundColor = "#E9FAF1";
   //Check if name input value is valid in focus
   //Rule: two or more symbols
-  if (nameRule.test(nameInput.value)) {
+  if (nameInput.value.match(nameRule)) {
     correctIcon1.style.opacity = 1;
     errorBlock.style.opacity = 0;
     nameInput.style.backgroundColor = "#FFFFFF";
@@ -49,8 +49,10 @@ nameInput.addEventListener("blur", function () {
     document.querySelector(".asterisk1").style.opacity = 0;
     firstBox.style.backgroundColor = "#E9FAF1";
   }
-  //Check if name inout value is not valid in blur
-  if (!nameRule.test(nameInput.value)) {
+  //Check if name input value is not valid in blur
+  if (!nameInput.value.match(nameRule)) {
+    console.log(nameInput.value);
+    console.log("IF NAME INPUT IS NOT VALID");
     correctIcon1.style.opacity = 0;
     errorBlock.style.opacity = 1;
     nameInput.style.backgroundColor = "#FFEFEF";
@@ -76,7 +78,7 @@ emailInput.addEventListener("focus", function () {
   firstBox.style.backgroundColor = "#E9FAF1";
   //Check if email input value is valid in focus
   //Rule: email input value should be in Redberry format(@redberry.ge)
-  if (emailRule.test(emailInput.value)) {
+  if (emailInput.value.match(emailRule)) {
     correctIcon2.style.opacity = 1;
     errorBlock.style.opacity = 0;
     emailInput.style.backgroundColor = "#FFFFFF";
@@ -92,7 +94,7 @@ emailInput.addEventListener("blur", function () {
     firstBox.style.backgroundColor = "#E9FAF1";
   }
   //Check if name inout value is not valid in blur
-  if (!emailRule.test(emailInput.value)) {
+  if (!emailInput.value.match(emailRule)) {
     correctIcon2.style.opacity = 0;
     errorBlock.style.opacity = 1;
     emailInput.style.backgroundColor = "#FFEFEF";
@@ -117,7 +119,7 @@ telInput.addEventListener("focus", function () {
   firstBox.style.backgroundColor = "#E9FAF1";
   //Check if number input value is valid in focus
   //Rule: number input value should 9 digits long
-  if (telRule.test(telInput.value)) {
+  if (telInput.value.match(telRule)) {
     correctIcon3.style.opacity = 1;
     errorBlock.style.opacity = 0;
     telInput.style.backgroundColor = "#FFFFFF";
@@ -133,7 +135,7 @@ telInput.addEventListener("blur", function () {
     firstBox.style.backgroundColor = "#E9FAF1";
   }
   //Check if email inout value is not valid in blur
-  if (!telRule.test(telInput.value)) {
+  if (!telInput.value.match(telRule)) {
     correctIcon3.style.opacity = 0;
     errorBlock.style.opacity = 1;
     telInput.style.backgroundColor = "#FFEFEF";
@@ -235,10 +237,10 @@ if (!localStorage.getItem("user")) {
     phone: JSON.parse(localStorage.getItem("user")).phone,
     date_of_birth: JSON.parse(localStorage.getItem("user")).date_of_birth,
   };
-  nameInput.value = JSON.parse(localStorage.getItem("user")).name;
-  emailInput.value = JSON.parse(localStorage.getItem("user")).email;
-  telInput.value = JSON.parse(localStorage.getItem("user")).phone;
-  dateInput.value = JSON.parse(localStorage.getItem("user")).date_of_birth;
+  nameInput.value = user.name;
+  emailInput.value = user.email;
+  telInput.value = user.phone;
+  dateInput.value = user.date_of_birth;
 
   for (let i = 1; i < 5; i++) {
     document.querySelector(`.asterisk${i}`).style.opacity = 0;
