@@ -9,4 +9,4 @@ setTimeout(() => {
     "first-reg-page.html"
   );
   window.location.assign(String(newURL));
-}, 3000);
+}, 5000);
