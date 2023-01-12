@@ -25,7 +25,7 @@ body {
 }
 .landing-image {
   width: 48vw;
-  height: 43.3vw;
+  height: 100vh;
   position: relative;
 }
 .landing-image img {
@@ -218,6 +218,14 @@ body {
   position: absolute;
   background-color: #ffffff;
 }
+
+.answer-txt {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+  position: relative;
+}
 .eclipse1 {
   width: 10px;
   height: 10px;
@@ -225,8 +233,8 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  top: 45px;
-  left: 5px;
+  top: 5px;
+  left: 35px;
 }
 
 .eclipse2 {
@@ -236,21 +244,14 @@ body {
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
-  top: 45px;
-  left: 59px;
+  top: 5px;
+  left: 30px;
 }
 .particip-quest {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
   margin-bottom: 12px;
-}
-
-.answer-txt {
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 24px;
-  font-weight: 400;
 }
 
 .asterisk2 {

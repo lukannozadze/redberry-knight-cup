@@ -125,8 +125,8 @@ turnOffBtn.addEventListener("click", function () {
 });
 
 //If answer:yes is selected user fills by yes
-document.getElementById("yes").addEventListener("click", function () {
-  if (document.getElementById("yes").checked === true) {
+document.querySelector(".yes").addEventListener("click", function () {
+  if (document.querySelector(".yes").checked === true) {
     updatedUser = {
       ...updatedUser,
       already_participated: true,
@@ -135,8 +135,8 @@ document.getElementById("yes").addEventListener("click", function () {
 });
 
 //If answer:no is selected user fills by no
-document.getElementById("no").addEventListener("click", function () {
-  if (document.getElementById("no").checked === true) {
+document.querySelector(".no").addEventListener("click", function () {
+  if (document.querySelector(".no").checked === true) {
     updatedUser = {
       ...updatedUser,
       already_participated: false,

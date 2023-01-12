@@ -28,7 +28,7 @@ body {
 }
 .landing-image {
   width: 48vw;
-  height: 43.3vw;
+  height: 100vh;
 }
 .landing-image img {
   width: 100%;

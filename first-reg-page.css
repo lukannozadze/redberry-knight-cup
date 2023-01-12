@@ -8,6 +8,7 @@
 
 body {
   max-width: 100vw;
+
   overflow: hidden;
   display: flex;
 }
@@ -29,7 +30,7 @@ body {
 }
 .landing-image {
   width: 48vw;
-  height: 43.3vw;
+  height: 100vh;
   position: relative;
 }
 

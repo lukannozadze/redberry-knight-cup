@@ -27,7 +27,7 @@ body {
 }
 .landing-image {
   width: 48vw;
-  height: 43.3vw;
+  height: 100vh;
 }
 .landing-image img {
   width: 100%;
@@ -36,7 +36,7 @@ body {
 
 .container-second {
   width: 52vw;
-  height: 49vw;
+  height: 100vh;
   background-color: #fd5334;
 }
 
